@@ -12,6 +12,9 @@
         text-decoration: none;
     }
 
+/* Lo del body me parece que se puede evitar. Hay un monton de cosas en el body, y despues el "width" aparece en todos lados.
+solo recurriria a esto, si realmente me faciliraria otras cosas. */
+
     body {
         width: 100%;
         height: auto;
@@ -28,6 +31,11 @@
 
 /* HEADER */
 
+/* "width: 48%;" aparece 4 veces y "width: 100%;" aparece 6 veces. Quizas haya una manera de hacerlo mas DRY, o en el caso contrario, se lo adjudicaria
+a varios tags de una, como por ejemplo:
+header, section, article, .quotebox {
+    width: 100%;
+}*/
     header {
         width: 100%;
         height: auto;
